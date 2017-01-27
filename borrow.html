@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Borropal</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!--<script src="assets/js/vendor/jquery.min.js"></script>-->
+    <script src="assets/js/tether.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/holder.min.js"></script>
+    <script>
+        $(window).scroll(function (event) {
+            var yOffset = window.pageYOffset;
+            var breakpoint = 10;
+            if (yOffset > breakpoint) {
+                $("#app-header").addClass('black_nav');
+            } else {
+                $("#app-header").removeClass('black_nav');
+            }
+        });
+    </script>
+</head>
+
+<body>
+
+<header id="inner_header">
+    <div class="site-header">
+        <nav id="app-header"
+             class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top sticky-top navbar-light bg-faded">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html">
+                <img src="assets/img/BorroPal_logo.png" height="22">
+            </a>
+
+            <div class="collapse navbar-collapse nav-" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown" style="margin-top: 8px;">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dd-notification"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/img/notification.svg"> <span>Notifications</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-notif" aria-labelledby="dd-notification">
+                            <div class="dropdown-menu-notif-header">
+                                Notifications
+                                <span class="label label-pill label-danger">4</span>
+                            </div>
+                            <div class="dropdown-menu-notif-list jspScrollable"
+                                 style="overflow: hidden; padding: 0px; width: 288px;" tabindex="0">
+                                <div class="jspContainer" style="width: 288px; height: 192px;">
+                                    <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 276px;">
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Morgan</a> was bothering about something
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Lioneli</a> had commented on this <a href="#">Super Important
+                                            Thing</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to
+                                            see <a href="#">This Movie</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="jspVerticalBar">
+                                        <div class="jspCap jspCapTop"></div>
+                                        <div class="jspTrack" style="height: 192px;">
+                                            <div class="jspDrag" style="height: 134px;">
+                                                <div class="jspDragTop"></div>
+                                                <div class="jspDragBottom"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jspCap jspCapBottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu-notif-more">
+                                <a href="#">See more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown" style="margin-top: 8px;">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dd-message"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <img src="assets/img/message_icon.svg"> <span>Messages</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-notif" aria-labelledby="dd-message">
+                            <div class="dropdown-menu-notif-header">
+                                Notifications
+                                <span class="label label-pill label-danger">4</span>
+                            </div>
+                            <div class="dropdown-menu-notif-list jspScrollable"
+                                 style="overflow: hidden; padding: 0px; width: 288px;" tabindex="0">
+                                <div class="jspContainer" style="width: 288px; height: 192px;">
+                                    <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 276px;">
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Morgan</a> was bothering about something
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Lioneli</a> had commented on this <a href="#">Super Important
+                                            Thing</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to
+                                            see <a href="#">This Movie</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                    </div>
+                                    <div class="jspVerticalBar">
+                                        <div class="jspCap jspCapTop"></div>
+                                        <div class="jspTrack" style="height: 192px;">
+                                            <div class="jspDrag" style="height: 134px;">
+                                                <div class="jspDragTop"></div>
+                                                <div class="jspDragBottom"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jspCap jspCapBottom"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu-notif-more">
+                                <a href="#">See more</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01"
+                           data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            <img style="border-radius: 50%;margin: 0 4px" src="holder.js/38x38"> <span>Olatunde Owokonoiran</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown01">
+                            <a class="dropdown-item" href="dashboard.html"> Dashboard </a>
+                            <a class="dropdown-item" href="profile.html"> Profile </a>
+                            <a class="dropdown-item" href="logout.html"> Log out </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8" style="    margin-top: 5rem;">
+                    <div>
+                        <h3>Borrow</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<ul class="nav justify-content-center">
+    <li class="nav-item">
+        <a class="nav-link" href="dashboard.html">Dashboard</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="borrow.html">Borrow</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="lend.html">Lend</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="activities.html">Activities</a>
+    </li>
+</ul>
+
+<section id="dashoard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="inner_padding">
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Loan Terms</h3>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Loan Amount</label>
+                                    <input type="text" value="#1,000,000" class="form-control"
+                                           aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with
+                                        anyone else.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>Interest Rate</label>
+                                    <input type="text" value="50%" class="form-control"
+                                           aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Interest Tenure</label>
+                                    <input type="text" value="500" class="form-control"
+                                           aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label>Start Date</label>
+                                    <input type="text" value="02/08/2017" class="form-control"
+                                           aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <hr>
+                            </div>
+
+
+                            <div class="col-md-12">
+                                <h3>Loan Repayment Terms</h3>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Repayment Type</label>
+                                    <select class="form-control">
+                                        <option>Daily Payment</option>
+                                        <option>Monthly Payment</option>
+                                        <option>Weekly Payment</option>
+                                        <option>Yearly Payment</option>
+                                        <option>Not paying anything back</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Repayment Start Date</label>
+                                    <input type="text" value="02/08/2017" class="form-control"
+                                           aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>No. of installments</label>
+                                    <input type="text" value="500" class="form-control"
+                                           aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Tenure</label>
+                                    <input type="text" class="form-control"
+                                           aria-describedby="emailHelp">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div>
+                    <div>
+                        <h3>Term & Conditions</h3>
+                        <p><strong>Brownie pastry biscuit liquorice candy canes apple pie icing chupa chups. Bonbon bear claw
+                            sweet marshmallow ice cream powder icing.</strong></p>
+                        <p>Brownie pastry biscuit liquorice candy canes apple pie icing chupa chups. Bonbon bear claw
+                            sweet marshmallow ice cream powder icing. Danish biscuit jelly gummi bears pie bonbon. Sweet
+                            roll sugar plum carrot cake halvah candy ice cream chupa chups. Ice cream candy canes
+                            brownie gummi bears biscuit liquorice danish jelly beans gingerbread. Lemon drops chupa
+                            chups jelly. Gummi bears tootsie roll lollipop dessert cheesecake danish.</p>
+                        <p> Pie jujubes powder
+                            chocolate macaroon jelly-o. Tart candy canes soufflé jujubes chocolate lemon drops ice cream
+                            croissant. ly beans tiramisu apple pie. Powder muffin apple
+                            pie jelly-o. Gummi bears chupa chups sweet ice cream apple pie.</p>
+                        <ul>
+                            <li>Gummi bears tootsie roll lollipop dessert cheesecake danish. Pie jujubes powder
+                                chocolate macaroon jelly-o. Tart candy canes soufflé jujubes chocolate lemon drops ice cream
+                                croissant. Chocolate bar marshmallow oat cake oat cake tart</li>
+                            <li>Gummi bears tootsie roll lollipop dessert cheesecake danish. Pie jujubes powder
+                                chocolate macaroon jelly-o. Tart candy canes soufflé jujubes chocolate lemon drops ice cream
+                                croissant. Chocolate bar marshmallow oat cake oat cake tart</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-12">
+
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input type="checkbox" class="form-check-input">
+                                I fully understand the Term & Conditions
+                            </label>
+                        </div>
+
+                        <div class="">
+                            <button type="submit" class="btn_submit btn btn-block btn-primary">Process Loan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> COMPANY </h3>
+                    <ul>
+                        <li><a href="#"> About </a></li>
+                        <li><a href="#"> Careers </a></li>
+                        <li><a href="#"> Press </a></li>
+                        <li><a href="#"> Blog </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
+                    <h3> Info </h3>
+                    <ul>
+                        <li><a href="#"> Disclaimer </a></li>
+                        <li><a href="#"> Strategy </a></li>
+                        <li><a href="#"> Works </a></li>
+                        <li><a href="#"> Lorem Ipsum </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2  col-md-3 col-sm-4 col-xs-6">
+                    <h3> DISCOVER </h3>
+                    <ul>
+                        <li><a href="#"> Trust & Safety </a></li>
+                        <li><a href="#"> Help </a></li>
+                        <li><a href="#"> Terms & Privary </a></li>
+                        <li><a href="#"> Our Policy </a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-4 col-xs-6">
+                    <div style="margin-top: 64px;">
+                        <address style="font-size: 14px;">
+                            <strong>Borrolpal, Inc.</strong><br>
+                            1355 Market Street, Suite 900<br>
+                            San Francisco, CA 94103<br>
+                            <div style="margin-top: 18px;">
+                                <abbr title="Phone">Help Line:</abbr> +234 800 3422 234 <br>
+                                <abbr title="Phone">Email:</abbr> info@borropal.com
+                            </div>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                    <div style="padding: 40px 0 0px;">
+                        <p style="font-size: 12px;"> Copyright © borropal 2017. All right reserved. </p>
+                    </div>
+                    <ul class="social">
+                        <li><a href="#"> <i class=" fa fa-facebook"> </i> </a></li>
+                        <li><a href="#"> <i class="fa fa-twitter"> </i> </a></li>
+                        <li><a href="#"> <i class="fa fa-google-plus"> </i> </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/.row-->
+
+            <div class="footer-bottom">
+                <div>
+                    <div class="row">
+                        <div class="col-md-2">
+                            <img src="assets/img/BorroPal_logo.png" height="22">
+                        </div>
+                        <div class="col-md-7">
+                            <div>
+                                <div>
+                                    <h4 style="font-size: 14px; font-weight: 200; line-height: 27px;"> ABOUT US</h4>
+                                    <p>
+                                        Competently iterate open-source opportunities via sustainable process
+                                        improvements. Completely visualize standards compliant solutions rather than
+                                        stand-alone products. Energistically scale intermandated testing procedures
+                                        without customized applications. Dramatically.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3s">
+                            <ul class="nav nav-pills payments">
+                                <li><i class="fa fa-cc-visa"></i></li>
+                                <li><i class="fa fa-cc-mastercard"></i></li>
+                                <li><i class="fa fa-cc-amex"></i></li>
+                                <li><i class="fa fa-cc-paypal"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.footer-->
+</footer>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
