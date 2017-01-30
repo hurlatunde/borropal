@@ -15,7 +15,7 @@ body {
 }
 
 #landing_header {
-    background-image: url("../img/base.png");
+    /*background-image: url("../img/base.png");*/
     height: 100vh;
     position: relative;
     background-size: cover;
@@ -45,6 +45,7 @@ header .pstyle {
     position: absolute;
     bottom: 20px;
     left: 30px;
+    z-index: 999;
 }
 
 header .pstyle h4 {
@@ -582,7 +583,9 @@ form h3 {
     border-bottom: solid 1px transparent;
 }
 
-.dropdown-menu { padding: 0 0;}
+.dropdown-menu {
+    padding: 0 0;
+}
 
 .site-header .dropdown-menu-notif .dropdown-menu-notif-item .photo img {
     -webkit-border-radius: 50%;
@@ -638,6 +641,7 @@ form h3 {
     padding: 45px 30px 0;
     border-bottom: solid 1px #d8e2e7;
 }
+
 .faq-page-cats .faq-page-cat {
     text-align: center;
     margin: 0 0 40px;
@@ -663,7 +667,185 @@ form h3 {
 .faq-page-cats .faq-page-cat-txt {
     color: #919fa9;
 }
+
 .faq-page-questions {
     padding: 25px 30px 30px;
-     border: 1px solid #d8e2e7;
+    border: 1px solid #d8e2e7;
+}
+
+.payments li i {
+    font-size: 32px;
+    margin-right: 10px;
+}
+
+.inner_style {
+    background-image: url(../img/base.png);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-image: url(../img/base.png);
+}
+
+.owl-stage-outer {
+    height: 100vh;
+}
+
+.highcharts-credits {
+    display: none;
+}
+
+.statistic-box.red {
+    background-color: #fa424a;
+    background-image: url(/img/statistic-box-red.png);
+}
+
+.statistic-box {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+    background: 50% 50% no-repeat;
+    background-size: cover;
+    margin: 0 0 30px;
+}
+
+.statistic-box > div {
+    -webkit-border-radius: inherit;
+    border-radius: inherit;
+    height: 142px;
+    background: url(/img/statistic-box-grid.png) 50% 0;
+    background-size: 21px 20px;
+    position: relative;
+}
+
+.statistic-box .number {
+    font-size: 3.125rem;
+    line-height: 1;
+    padding: 32px 0 0;
+}
+
+.statistic-box .caption {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    position: relative;
+    min-height: 35px;
+    line-height: 1;
+}
+
+.statistic-box .caption > div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.statistic-box .percent {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    text-align: center;
+    font-size: .8125rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.statistic-box .arrow.up {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.statistic-box .arrow {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 7.5px 8px;
+    border-color: transparent transparent #fff;
+    margin: 0 0 2px;
+}
+
+.statistic-box.purple {
+    background-color: #ac6bec;
+    background-image: url(/img/statistic-box-purple.png);
+}
+
+.statistic-box.yellow {
+    background-color: #fdad2a;
+    background-image: url(/img/statistic-box-yellow.png);
+}
+
+.statistic-box.green {
+    background-color: #46c35f;
+    background-image: url(/img/statistic-box-green.png);
+}
+
+.table .table-photo {
+    padding-right: 15px;
+    width: 22px;
+    padding-top: 10px;
+}
+
+.table .table-photo img {
+    display: block;
+    width: 32px;
+    height: 32px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+    border-top-color: #d8e2e7;
+    padding: 11px 10px 10px;
+}
+
+.nav-pills .nav-link {
+    font-weight: 600;
+    color: #6ec2ae;
+}
+
+.nav-pills .nav-link.active {
+    color: #fff;
+    cursor: default;
+    background-color: #6ec2ae;
+}
+
+.box-typical {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #d8e2e7;
+    margin: 0 0 20px;
+}
+.profile-card {
+    text-align: center;
+    padding: 28px 15px 14px;
+}
+.profile-card .profile-card-photo {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto .5rem;
+}
+.profile-card .profile-card-photo img {
+    display: block;
+    width: 100%! important;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: auto! important;
+}
+
+.full-count, .profile-card .profile-card-name {
+    font-weight: 600;
+}
+
+.profile-card .profile-card-location {
+    color: #6c7a86;
+    margin: .2em 0 18px;
 }

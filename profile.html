@@ -19,9 +19,6 @@
     <script src="assets/js/tether.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/holder.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-
     <script>
         $(window).scroll(function (event) {
             var yOffset = window.pageYOffset;
@@ -31,115 +28,6 @@
             } else {
                 $("#app-header").removeClass('black_nav');
             }
-        });
-
-        $(function () {
-            Highcharts.theme = {
-                colors: ['#7cb5ec', '#f7a35c', '#90ee7e', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
-                    '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-                chart: {
-                    backgroundColor: null,
-                    style: {
-                        fontFamily: 'Avenir'
-                    }
-                },
-                title: {
-                    style: {
-                        fontSize: '16px',
-                        fontWeight: 'bold',
-                        textTransform: 'uppercase'
-                    }
-                },
-                tooltip: {
-                    borderWidth: 0,
-                    backgroundColor: 'rgba(219,219,216,0.8)',
-                    shadow: false
-                },
-                legend: {
-                    itemStyle: {
-                        fontWeight: 'bold',
-                        fontSize: '13px'
-                    }
-                },
-                xAxis: {
-                    gridLineWidth: 1,
-                    labels: {
-                        style: {
-                            fontSize: '12px',
-                            textTransform: 'capitalize'
-                        }
-                    }
-                },
-                yAxis: {
-                    minorTickInterval: 'auto',
-                    title: {
-                        style: {
-                            textTransform: 'capitalize'
-                        }
-                    },
-                    labels: {
-                        style: {
-                            fontSize: '12px'
-                        }
-                    }
-                },
-                plotOptions: {
-                    candlestick: {
-                        lineColor: '#404048'
-                    }
-                },
-
-
-                // General
-                background2: '#F0F0EA'
-
-            };
-
-            // Apply the theme
-            Highcharts.setOptions(Highcharts.theme);
-
-            Highcharts.chart('container', {
-                chart: {
-                    type: 'area'
-                },
-                title: {
-                    text: 'In here goes the title',
-                    x: -20
-                },
-                subtitle: {
-                    text: 'In here goes the sub-title',
-                    x: -20
-                },
-                xAxis: {
-                    categories: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-                    allowDecimals: false,
-                    labels: {
-                        formatter: function () {
-                            return this.value; // clean, unformatted number for year
-                        }
-                    }
-                },
-                yAxis: {
-                    title: {
-                        text: 'Money borrowed from borropal'
-                    },
-                    labels: {
-                        formatter: function () {
-                            return this.value / 1000 + 'k';
-                        }
-                    }
-                },
-                tooltip: {
-                    pointFormat: '{series.name} produced <b>{point.y:,.0f}</b><br/>text in {point.x}'
-                },
-                series: [{
-                    name: 'Borrow',
-                    data: [1255, 1144, 1109, 1950, 1071, 1824, 1057, 1527, 1475, 1421, 1358, 1104]
-                }, {
-                    name: 'Lend',
-                    data: [200, 150, 50, 120, 150, 200, 426, 660, 869, 1060, 1605, 3322]
-                }]
-            });
         });
     </script>
 </head>
@@ -314,7 +202,7 @@
             <div class="row">
                 <div class="col-md-8" style="    margin-top: 5rem;">
                     <div>
-                        <h3>Dashboard</h3>
+                        <h3> Profile </h3>
                     </div>
                 </div>
             </div>
@@ -342,70 +230,20 @@
     </li>
 </ul>
 
-<div class="alert alert-success" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-</div>
 
 <section id="dashoard">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div>
-                    <div id="container" style="min-width: 310px; height: 480px; margin: 0 auto"></div>
-                </div>
-            </div>
-
-            <div class="col-md-12">
-            <hr>
-            </div>
-
-            <div class="col-xl-12">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <article class="statistic-box red">
-                            <div>
-                                <div class="number">26</div>
-                                <div class="caption">
-                                    <div>Open tickets</div>
-                                </div>
-                            </div>
-                        </article>
-                    </div><!--.col-->
-                    <div class="col-sm-3">
-                        <article class="statistic-box purple">
-                            <div>
-                                <div class="number">12</div>
-                                <div class="caption">
-                                    <div>Closes tickets</div>
-                                </div>
-                            </div>
-                        </article>
-                    </div><!--.col-->
-                    <div class="col-sm-3">
-                        <article class="statistic-box yellow">
-                            <div>
-                                <div class="number">104</div>
-                                <div class="caption">
-                                    <div>New clients</div>
-                                </div>
-                            </div>
-                        </article>
-                    </div><!--.col-->
-                    <div class="col-sm-3">
-                        <article class="statistic-box green">
-                            <div>
-                                <div class="number">29</div>
-                                <div class="caption">
-                                    <div>Here is an example of a long name</div>
-                                </div>
-                            </div>
-                        </article>
-                    </div><!--.col-->
-                </div><!--.row-->
-            </div>
+        <div class="col-lg-3 col-lg-pull-6 col-md-6 col-sm-6">
+            <section class="box-typical">
+                <div class="profile-card">
+                    <div class="profile-card-photo">
+                        <img src="holder.js/220x220" style="display: block; width: 100%;" >
+                    </div>
+                    <div class="profile-card-name">Sarah Sanchez</div>
+                    <div class="profile-card-status">Company Founder</div>
+                    <div class="profile-card-location">Greater Seattle Area</div>
+                </div><!--.profile-card-->
+            </section><!--.box-typical-->
         </div>
     </div>
 </section>
@@ -502,6 +340,10 @@
     </div>
     <!--/.footer-->
 </footer>
+
+<script>
+    $('[data-toggle="tooltip"]').tooltip()
+</script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
