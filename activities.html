@@ -19,9 +19,17 @@
     <script src="assets/js/tether.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/holder.min.js"></script>
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script src="https://code.highcharts.com/modules/exporting.js"></script>
-
+    <script>
+        $(window).scroll(function (event) {
+            var yOffset = window.pageYOffset;
+            var breakpoint = 10;
+            if (yOffset > breakpoint) {
+                $("#app-header").addClass('black_nav');
+            } else {
+                $("#app-header").removeClass('black_nav');
+            }
+        });
+    </script>
 </head>
 
 <body>
@@ -208,7 +216,7 @@
 <div>
     <ul class="nav justify-content-center">
         <li class="nav-item">
-            <a class="nav-link active" href="dashboard.html">My Dashboard</a>
+            <a class="nav-link " href="dashboard.html">My Dashboard</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="profile.html">Profile</a>
@@ -220,13 +228,10 @@
             <a class="nav-link" href="borrow.html">Borrow</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="lend.html">Lend</a>
-        </li>
-        <li class="nav-item">
             <a class="nav-link" href="requests.html">Loan Requests</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="activities.html">Activities</a>
+            <a class="nav-link active" href="activities.html">Activities</a>
         </li>
     </ul>
 </div>
@@ -273,205 +278,9 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <div style="background: #f1f1f1;padding: 20px;border-radius: 4px;">
-                    <div class="row">
-                        <div class="col-md-4" style="border-right: 1px solid #e6e3e3;">
-                            <div class="req_details">
-                                <h4>Total Loan Requests</h4>
-                                <h2><span>NGN</span>2,000</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-4" style="border-right: 1px solid #e6e3e3;">
-                            <div class="req_details">
-                                <h4>Total Paid Out</h4>
-                                <h2><span>NGN</span>42,000</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="req_details">
-                                <h4>Loan Pending</h4>
-                                <h2><span>NGN</span>2,000</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div style="margin: 40px 0;">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title" style="font-size: 19px;">Todos (6)</h3>
-                        </div>
-                        <!--<div class="panel-body"><p>In here goes a little description about the list of things that are going tb here.</p></div>-->
-                        <ul class="list-group">
-                            <li class="list-group-item" style="border: 0px solid rgba(0,0,0,.125);">
-                                <a href="#" class="list_things">
-                                    <div style="float: left">
-                                        <div><img style="width: 71%;padding: 3px;" src="/assets/img/Read Message_000000_50.png"></div>
-                                    </div>
-                                    <div style="float: right">
-                                        <div>
-                                            <h2>You have an unread message waiting for you</h2>
-                                            <p>43 message</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-group-item" style="border: 0px solid rgba(0,0,0,.125);">
-                                <a href="#" class="list_things">
-                                    <div style="float: left">
-                                        <div><img style="width: 71%;padding: 3px;" src="/assets/img/MasterCard_50.png"></div>
-                                    </div>
-                                    <div style="float: right">
-                                        <div>
-                                            <h2 class="center">Set your payment information/method</h2>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-group-item" style="border: 0px solid rgba(0,0,0,.125);">
-                                <a href="#" class="list_things">
-                                    <div style="float: left">
-                                        <div><img style="width: 71%;padding: 3px;" src="/assets/img/Medal_50.png"></div>
-                                    </div>
-                                    <div style="float: right">
-                                        <div>
-                                            <h2 class="center">Earn a reward for each friend you invite</h2>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-group-item" style="border: 0px solid rgba(0,0,0,.125);">
-                                <a href="#" class="list_things">
-                                    <div style="float: left">
-                                        <div><img style="width: 71%;padding: 3px;" src="/assets/img/Vertical Settings Mixer_50.png"></div>
-                                    </div>
-                                    <div style="float: right">
-                                        <div>
-                                            <h2 class="center">Set your settings</h2>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="list-group-item" style="border: 0px solid rgba(0,0,0,.125);">
-                                <a href="#" class="list_things">
-                                    <div style="float: left">
-                                        <div><img style="width: 71%;padding: 3px;" src="/assets/img/Gender Neutral User_50.png"></div>
-                                    </div>
-                                    <div style="float: right">
-                                        <div>
-                                            <h2 class="center">Make sure your profile details is up to dat</h2>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-                <div>
-                    <div>
-                        <h3>Loan Requests </h3>
-                    </div>
-                    <div style="padding: 22px 0;">
-                        <table class="table table-hover ">
-                            <thead class="thead-default">
-                            <tr>
-                                <th>#</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Loan Amount</th>
-                                <th>Repayment Amount</th>
-                                <th>Status</th>
-                                <th>last payment</th>
-                                <th>Final Date Due</th>
-                                <th>Lender</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Ottomon</td>
-                                <td>NGN 40,000</td>
-                                <td>NGN 48,000</td>
-                                <td><span class="label label-success">Paid</span></td>
-                                <td>6 hours ago</td>
-                                <td>October 20, 2019</td>
-                                <td class="table-photo">
-                                    <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Olatunde</td>
-                                <td>Dominic</td>
-                                <td>NGN 40,000</td>
-                                <td>NGN 48,000</td>
-                                <td> <span class="label label-warning">Pending</span></td>
-                                <td>6 hours ago</td>
-                                <td>October 20, 2019</td>
-                                <td class="table-photo">
-                                    <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Sunday</td>
-                                <td>Abba</td>
-                                <td>NGN 40,000</td>
-                                <td>NGN 48,000</td>
-                                <td>Pending</td>
-                                <td>6 hours ago</td>
-                                <td>October 20, 2019</td>
-                                <td class="table-photo">
-                                    <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Monday</td>
-                                <td>Otto</td>
-                                <td>NGN 40,000</td>
-                                <td>NGN 48,000</td>
-                                <td>Pending</td>
-                                <td>6 hours ago</td>
-                                <td>October 20, 2019</td>
-                                <td class="table-photo">
-                                    <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Mark</td>
-                                <td>Settingp</td>
-                                <td>NGN 40,000</td>
-                                <td>NGN 48,000</td>
-                                <td>Pending</td>
-                                <td>6 hours ago</td>
-                                <td>October 20, 2019</td>
-                                <td class="table-photo">
-                                    <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>NGN 40,000</td>
-                                <td>NGN 48,000</td>
-                                <td>Pending</td>
-                                <td>6 hours ago</td>
-                                <td>October 20, 2019</td>
-                                <td class="table-photo">
-                                    <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
 
             </div>
+
         </div>
     </div>
 </section>
@@ -581,6 +390,10 @@
     </div>
     <!--/.footer-->
 </footer>
+
+<script>
+    $('[data-toggle="tooltip"]').tooltip()
+</script>
 
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>

@@ -20,23 +20,23 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: Playfair Display;
-    src: url('../fonts/PlayfairDisplay-BoldItalic.ttf');
-    font-weight: 700;
-    font-style: italic;
-}
+/*@font-face {*/
+    /*font-family: Playfair Display;*/
+    /*src: url('../fonts/PlayfairDisplay-BoldItalic.ttf');*/
+    /*font-weight: 700;*/
+    /*font-style: italic;*/
+/*}*/
 
-@font-face {
-    font-family: Playfair Display;
-    src: url('../fonts/PlayfairDisplay-Bold.ttf');
-    font-weight: 700;
-    font-style: normal;
-}
+/*@font-face {*/
+    /*font-family: Playfair Display;*/
+    /*src: url('../fonts/PlayfairDisplay-Bold.ttf');*/
+    /*font-weight: 700;*/
+    /*font-style: normal;*/
+/*}*/
 
-@font-face {
-    font-family: Playfair Display;
-    src: url('../fonts/PlayfairDisplay-Regular.ttf');
-    font-weight: 300;
-    font-style: normal;
-}
+/*@font-face {*/
+    /*font-family: Playfair Display;*/
+    /*src: url('../fonts/PlayfairDisplay-Regular.ttf');*/
+    /*font-weight: 300;*/
+    /*font-style: normal;*/
+/*}*/

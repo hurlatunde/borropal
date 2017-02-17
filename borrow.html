@@ -49,11 +49,13 @@
 
             <div class="collapse navbar-collapse nav-" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown" style="margin-top: 8px;">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dd-notification"
+                    <li class="nav-item dropdown" style="margin-top: 4px;margin-right: 7px;">
+                        <a class="nav-link dropdown-togegle active" href="http://example.com" id="dd-notification"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/img/notification.svg"> <span>Notifications</span>
+                            <img src="assets/img/notification.svg">
+                            <!--<i class="font-icon-alarm"></i>-->
+                            <!--<span>Notifications</span>-->
                         </a>
                         <div class="dropdown-menu dropdown-menu-notif" aria-labelledby="dd-notification">
                             <div class="dropdown-menu-notif-header">
@@ -115,11 +117,12 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown" style="margin-top: 8px;">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dd-message"
+                    <li class="nav-item dropdown" style="margin-top: 4px;margin-right: 7px;">
+                        <a class="nav-link dropdown-togegle active" href="http://example.com" id="dd-message"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/img/message_icon.svg"> <span>Messages</span>
+                            <img src="assets/img/message_icon.svg">
+                            <!--<span>Messages</span>-->
                         </a>
                         <div class="dropdown-menu dropdown-menu-notif" aria-labelledby="dd-message">
                             <div class="dropdown-menu-notif-header">
@@ -183,10 +186,11 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01"
+                        <a class="nav-link dropdown-toggle style_tri" href="http://example.com" id="dropdown01"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img style="border-radius: 50%;margin: 0 4px" src="holder.js/38x38"> <span>Olatunde Owokonoiran</span>
+                            <img class="user" style="border-radius: 50%;margin: 0 4px;width: 40px;"
+                                 src="assets/img/photo-92-3.jpg"> <span> ifeoma nwakwesi </span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item" href="dashboard.html"> Dashboard </a>
@@ -198,38 +202,84 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8" style="    margin-top: 5rem;">
-                    <div>
-                        <h3>Borrow</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-8" style="    margin-top: 5rem;">-->
+        <!--<div>-->
+        <!--<h3>Dashboard</h3>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
     </div>
 </header>
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link" href="dashboard.html">Dashboard</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link active" href="borrow.html">Borrow</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="lend.html">Lend</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="activities.html">Activities</a>
-    </li>
-</ul>
+
+<div>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">My Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="marketplace.html">Market Place</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="borrow.html">Borrow</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="requests.html">Loan Requests</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="activities.html">Activities</a>
+        </li>
+    </ul>
+</div>
 
 <section id="dashoard">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="inner_padding">
-
+            <div class="col-md-3">
+                <div>
+                    <div>
+                        <h3>Hi, ifeoma nwakwesi</h3>
+                        <p>Welcome Back</p>
+                    </div>
+                </div>
+                <hr>
+                <div style="background: #f1f1f1;padding: 20px;border-radius: 4px;">
+                    <div class="text-center">
+                        <div>
+                            <img style="width: 42%;padding: 18px;" src="/assets/img/Read Message_000000_50.png">
+                        </div>
+                        <h3>Invite your friend</h3>
+                        <p>Earn a reward for each friend you invite</p>
+                        <div>
+                            <div class="form-group">
+                                <input readonly type="email" style="    font-size: 13px;" value="https://borrowpal.com/ref/234223" disabled class="form-control"
+                                       aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help & Supports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Copyright © borropal 2017</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="inner_padding" style="border: 0px solid rgba(0, 0, 0, .2);">
                     <form>
                         <div class="row">
                             <div class="col-md-12">
@@ -310,46 +360,40 @@
                             </div>
                         </div>
                     </form>
-
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div>
                     <div>
-                        <h3>Term & Conditions</h3>
-                        <p><strong>Brownie pastry biscuit liquorice candy canes apple pie icing chupa chups. Bonbon bear claw
-                            sweet marshmallow ice cream powder icing.</strong></p>
-                        <p>Brownie pastry biscuit liquorice candy canes apple pie icing chupa chups. Bonbon bear claw
-                            sweet marshmallow ice cream powder icing. Danish biscuit jelly gummi bears pie bonbon. Sweet
-                            roll sugar plum carrot cake halvah candy ice cream chupa chups. Ice cream candy canes
-                            brownie gummi bears biscuit liquorice danish jelly beans gingerbread. Lemon drops chupa
-                            chups jelly. Gummi bears tootsie roll lollipop dessert cheesecake danish.</p>
-                        <p> Pie jujubes powder
-                            chocolate macaroon jelly-o. Tart candy canes soufflé jujubes chocolate lemon drops ice cream
-                            croissant. ly beans tiramisu apple pie. Powder muffin apple
-                            pie jelly-o. Gummi bears chupa chups sweet ice cream apple pie.</p>
-                        <ul>
-                            <li>Gummi bears tootsie roll lollipop dessert cheesecake danish. Pie jujubes powder
-                                chocolate macaroon jelly-o. Tart candy canes soufflé jujubes chocolate lemon drops ice cream
-                                croissant. Chocolate bar marshmallow oat cake oat cake tart</li>
-                            <li>Gummi bears tootsie roll lollipop dessert cheesecake danish. Pie jujubes powder
-                                chocolate macaroon jelly-o. Tart candy canes soufflé jujubes chocolate lemon drops ice cream
-                                croissant. Chocolate bar marshmallow oat cake oat cake tart</li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-12">
-
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input type="checkbox" class="form-check-input">
-                                I fully understand the Term & Conditions
-                            </label>
+                        <div>
+                            <h3>Term & Conditions</h3>
+                            <p><strong>Brownie pastry biscuit liquorice candy canes apple pie icing chupa chups. Bonbon bear claw
+                                sweet marshmallow ice cream powder icing.</strong></p>
+                            <p>Brownie pastry biscuit liquorice candy canes apple pie icing chupa chups. Bonbon bear claw
+                                sweet marshmallow ice cream powder icing. Danish biscuit jelly gummi bears pie bonbon. Sweet
+                                roll sugar plum carrot cake halvah candy ice cream chupa chups. Ice cream candy canes
+                                brownie gummi bears biscuit liquorice danish jelly beans gingerbread. Lemon drops chupa
+                                chups jelly. Gummi bears tootsie roll lollipop dessert cheesecake danish.</p>
+                            <ul>
+                                <li>Gummi bears tootsie roll lollipop dessert cheesecake danish. Pie jujubes powder
+                                    chocolate macaroon jelly-o. Tart candy canes soufflé jujubes chocolate lemon drops ice cream
+                                    croissant. Chocolate bar marshmallow oat cake oat cake tart</li>
+                                <li>Gummi bears tootsie roll lollipop dessert cheesecake danish. Pie jujubes powder
+                                    chocolate macaroon jelly-o. Tart candy canes soufflé jujubes chocolate lemon drops ice cream
+                                    croissant. Chocolate bar marshmallow oat cake oat cake tart</li>
+                            </ul>
                         </div>
 
-                        <div class="">
-                            <button type="submit" class="btn_submit btn btn-block btn-primary">Process Loan
-                            </button>
+                        <div class="col-md-12">
+
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                    I fully understand the Term & Conditions
+                                </label>
+                            </div>
+                            <br>
+
+                            <div class="">
+                                <button type="submit" class="btn_submit btn btn-block btn-primary btn-bb rounded">Process Loan
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -357,6 +401,19 @@
         </div>
     </div>
 </section>
+
+<div class="ref_friend">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="background: #e01765;padding: 40px;color: #fff;">
+                <div>
+                    <h3>Invite your friend</h3>
+                    <p>Earn a reward for each friend you invite</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="footer" id="footer">

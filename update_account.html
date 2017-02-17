@@ -10,6 +10,7 @@
     <title>Borropal</title>
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-datepicker.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
@@ -18,6 +19,7 @@
     <!--<script src="assets/js/vendor/jquery.min.js"></script>-->
     <script src="assets/js/tether.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.js"></script>
     <script src="assets/js/holder.min.js"></script>
     <script>
         $(window).scroll(function (event) {
@@ -49,91 +51,136 @@
 
             <div class="collapse navbar-collapse nav-" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown"  style="margin-top: 8px;">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dd-notification"
+                    <li class="nav-item dropdown" style="margin-top: 4px;margin-right: 7px;">
+                        <a class="nav-link dropdown-togegle active" href="http://example.com" id="dd-notification"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/img/notification.svg"> <span>Notifications</span>
+                            <img src="assets/img/notification.svg">
+                            <!--<i class="font-icon-alarm"></i>-->
+                            <!--<span>Notifications</span>-->
                         </a>
                         <div class="dropdown-menu dropdown-menu-notif" aria-labelledby="dd-notification">
                             <div class="dropdown-menu-notif-header">
                                 Notifications
                                 <span class="label label-pill label-danger">4</span>
                             </div>
-                            <div class="dropdown-menu-notif-list jspScrollable" style="overflow: hidden; padding: 0px; width: 288px;" tabindex="0">
-                                <div class="jspContainer" style="width: 288px; height: 192px;"><div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 276px;"><div class="dropdown-menu-notif-item">
-                                    <div class="photo">
-                                        <img src="holder.js/32x32" alt="">
+                            <div class="dropdown-menu-notif-list jspScrollable"
+                                 style="overflow: hidden; padding: 0px; width: 288px;" tabindex="0">
+                                <div class="jspContainer" style="width: 288px; height: 192px;">
+                                    <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 276px;">
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Morgan</a> was bothering about something
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Lioneli</a> had commented on this <a href="#">Super Important
+                                            Thing</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to
+                                            see <a href="#">This Movie</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
                                     </div>
-                                    <div class="dot"></div>
-                                    <a href="#">Morgan</a> was bothering about something
-                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-                                </div><div class="dropdown-menu-notif-item">
-                                    <div class="photo">
-                                        <img src="holder.js/32x32" alt="">
+                                    <div class="jspVerticalBar">
+                                        <div class="jspCap jspCapTop"></div>
+                                        <div class="jspTrack" style="height: 192px;">
+                                            <div class="jspDrag" style="height: 134px;">
+                                                <div class="jspDragTop"></div>
+                                                <div class="jspDragBottom"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jspCap jspCapBottom"></div>
                                     </div>
-                                    <div class="dot"></div>
-                                    <a href="#">Lioneli</a> had commented on this <a href="#">Super Important Thing</a>
-                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-                                </div><div class="dropdown-menu-notif-item">
-                                    <div class="photo">
-                                        <img src="holder.js/32x32" alt="">
-                                    </div>
-                                    <div class="dot"></div>
-                                    <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
-                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-                                </div><div class="dropdown-menu-notif-item">
-                                    <div class="photo">
-                                        <img src="holder.js/32x32" alt="">
-                                    </div>
-                                    <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to see <a href="#">This Movie</a>
-                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-                                </div></div><div class="jspVerticalBar"><div class="jspCap jspCapTop"></div><div class="jspTrack" style="height: 192px;"><div class="jspDrag" style="height: 134px;"><div class="jspDragTop"></div><div class="jspDragBottom"></div></div></div><div class="jspCap jspCapBottom"></div></div></div></div>
+                                </div>
+                            </div>
                             <div class="dropdown-menu-notif-more">
                                 <a href="#">See more</a>
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown"  style="margin-top: 8px;">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dd-message"
+                    <li class="nav-item dropdown" style="margin-top: 4px;margin-right: 7px;">
+                        <a class="nav-link dropdown-togegle active" href="http://example.com" id="dd-message"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/img/message_icon.svg"> <span>Messages</span>
+                            <img src="assets/img/message_icon.svg">
+                            <!--<span>Messages</span>-->
                         </a>
                         <div class="dropdown-menu dropdown-menu-notif" aria-labelledby="dd-message">
                             <div class="dropdown-menu-notif-header">
                                 Notifications
                                 <span class="label label-pill label-danger">4</span>
                             </div>
-                            <div class="dropdown-menu-notif-list jspScrollable" style="overflow: hidden; padding: 0px; width: 288px;" tabindex="0">
-                                <div class="jspContainer" style="width: 288px; height: 192px;"><div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 276px;"><div class="dropdown-menu-notif-item">
-                                    <div class="photo">
-                                        <img src="holder.js/32x32" alt="">
+                            <div class="dropdown-menu-notif-list jspScrollable"
+                                 style="overflow: hidden; padding: 0px; width: 288px;" tabindex="0">
+                                <div class="jspContainer" style="width: 288px; height: 192px;">
+                                    <div class="jspPane" style="padding: 0px; top: 0px; left: 0px; width: 276px;">
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Morgan</a> was bothering about something
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Lioneli</a> had commented on this <a href="#">Super Important
+                                            Thing</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <div class="dot"></div>
+                                            <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
+                                        <div class="dropdown-menu-notif-item">
+                                            <div class="photo">
+                                                <img src="holder.js/32x32" alt="">
+                                            </div>
+                                            <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to
+                                            see <a href="#">This Movie</a>
+                                            <div class="color-blue-grey-lighter">7 hours ago</div>
+                                        </div>
                                     </div>
-                                    <div class="dot"></div>
-                                    <a href="#">Morgan</a> was bothering about something
-                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-                                </div><div class="dropdown-menu-notif-item">
-                                    <div class="photo">
-                                        <img src="holder.js/32x32" alt="">
+                                    <div class="jspVerticalBar">
+                                        <div class="jspCap jspCapTop"></div>
+                                        <div class="jspTrack" style="height: 192px;">
+                                            <div class="jspDrag" style="height: 134px;">
+                                                <div class="jspDragTop"></div>
+                                                <div class="jspDragBottom"></div>
+                                            </div>
+                                        </div>
+                                        <div class="jspCap jspCapBottom"></div>
                                     </div>
-                                    <div class="dot"></div>
-                                    <a href="#">Lioneli</a> had commented on this <a href="#">Super Important Thing</a>
-                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-                                </div><div class="dropdown-menu-notif-item">
-                                    <div class="photo">
-                                        <img src="holder.js/32x32" alt="">
-                                    </div>
-                                    <div class="dot"></div>
-                                    <a href="#">Xavier</a> had commented on the <a href="#">Movie title</a>
-                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-                                </div><div class="dropdown-menu-notif-item">
-                                    <div class="photo">
-                                        <img src="holder.js/32x32" alt="">
-                                    </div>
-                                    <a href="#">Lionely</a> wants to go to <a href="#">Cinema</a> with you to see <a href="#">This Movie</a>
-                                    <div class="color-blue-grey-lighter">7 hours ago</div>
-                                </div></div><div class="jspVerticalBar"><div class="jspCap jspCapTop"></div><div class="jspTrack" style="height: 192px;"><div class="jspDrag" style="height: 134px;"><div class="jspDragTop"></div><div class="jspDragBottom"></div></div></div><div class="jspCap jspCapBottom"></div></div></div></div>
+                                </div>
+                            </div>
                             <div class="dropdown-menu-notif-more">
                                 <a href="#">See more</a>
                             </div>
@@ -141,10 +188,11 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01"
+                        <a class="nav-link dropdown-toggle style_tri" href="http://example.com" id="dropdown01"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img style="border-radius: 50%;margin: 0 4px" src="holder.js/38x38"> <span>Olatunde Owokonoiran</span>
+                            <img class="user" style="border-radius: 50%;margin: 0 4px;width: 40px;"
+                                 src="assets/img/photo-92-3.jpg"> <span> ifeoma nwakwesi </span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item" href="dashboard.html"> Dashboard </a>
@@ -156,35 +204,85 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8" style="    margin-top: 5rem;">
-                    <div>
-                        <h3>Profile</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-8" style="    margin-top: 5rem;">-->
+        <!--<div>-->
+        <!--<h3>Dashboard</h3>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
     </div>
 </header>
-
-<div class="alert alert-success" role="alert">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+<div>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="dashboard.html">My Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="marketplace.html">Market Place</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="borrow.html">Borrow</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="lend.html">Lend</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="requests.html">Loan Requests</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="activities.html">Activities</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="profile.html">Profile</a>
+        </li>
+    </ul>
 </div>
 
 <section id="profile">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 offset-md-2">
-                <div class="inner_padding">
-
-                    <div class="avatar text-center">
-                        <img src="holder.js/220x220" class="img-fluid" alt="Responsive image">
+            <div class="col-md-3">
+                <div>
+                    <div>
+                        <h3>Hi, ifeoma nwakwesi</h3>
+                        <p>Almost there, Just More information needed</p>
                     </div>
+                </div>
+                <hr>
+                <div style="background: #f1f1f1;padding: 20px;border-radius: 4px;">
+                    <div class="text-center">
+                        <div>
+                            <img style="width: 42%;padding: 18px;" src="/assets/img/Read Message_000000_50.png">
+                        </div>
+                        <h3>Invite your friend</h3>
+                        <p>Earn a reward for each friend you invite</p>
+                        <div>
+                            <div class="form-group">
+                                <input readonly type="email" style="    font-size: 13px;" value="https://borrowpal.com/ref/234223" disabled class="form-control"
+                                       aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="alert alert-success" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+                </div>
 
+
+                <div style="border: 0px solid rgba(0, 0, 0, .2);">
+
+                    <!--<div class="avatar text-center">-->
+                    <!--<img src="holder.js/220x220" class="img-fluid" alt="Responsive image">-->
+                    <!--</div>-->
+                    <!--<h1>Example page header <small>Subtext for header</small></h1>-->
                     <form>
                         <div class="row">
                             <div class="col-md-12">
@@ -208,14 +306,14 @@
                                            aria-describedby="emailHelp" placeholder="Enter email">
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-5">
                                 <div class="form-group">
                                     <label>Phone Number</label>
                                     <input type="text" value="1-(555)-555-5555" class="form-control"
                                            aria-describedby="emailHelp" placeholder="Enter email">
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
                                 <div class="form-group">
                                     <label>Gender</label>
                                     <select class="form-control">
@@ -225,12 +323,19 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <label>Date Of Birth</label>
-                                    <input type="text" value="02/08/1999" class="form-control"
-                                           aria-describedby="emailHelp" placeholder="Enter email">
+                            <div class="col-md-4">
+                                <label>Date Of Birth</label>
+                                <div class="input-group date">
+                                    <input type="text" class="form-control" value="12-02-2012">
+                                    <div class="input-group-addon">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    </div>
                                 </div>
+                                <!--<div class="form-group">-->
+                                <!--<label>Date Of Birth</label>-->
+                                <!--<input type="text" value="02/08/1999" class="form-control"-->
+                                <!--aria-describedby="emailHelp" placeholder="Enter email">-->
+                                <!--</div>-->
                             </div>
 
                             <div class="col-md-12">
@@ -271,15 +376,18 @@
                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label>Office address</label>
-                                    <textarea class="form-control" value="Artisanal kale address" id="exampleTextarea" rows="3"></textarea>
-                                    <small id="emailHelp2" class="form-text text-muted">We'll never share your email with
-                                        anyone else.</small>
+                                    <textarea class="form-control" value="Artisanal kale address" id="exampleTextarea"
+                                              rows="3"></textarea>
+                                    <small id="emailHelp2" class="form-text text-muted">We'll never share your email
+                                        with
+                                        anyone else.
+                                    </small>
                                 </div>
                             </div>
 
                             <div class="col-md-12">
                                 <div id="map" style="overflow: hidden;"></div>
-                                </div>
+                            </div>
 
                             <div class="col-md-12">
                                 <div class="form-group">
@@ -293,7 +401,9 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="">
-                                    <button type="submit" class="btn_submit btn btn-block btn-primary"> Update Profile </button>
+                                    <button type="submit" class="btn_submit btn btn-block btn-primary btn-bb rounded">
+                                        Update Profile
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -304,6 +414,18 @@
     </div>
 </section>
 
+<div class="ref_friend">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="background: #e01765;padding: 40px;color: #fff;">
+                <div>
+                    <h3>Invite your friend</h3>
+                    <p>Earn a reward for each friend you invite</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <footer>
     <div class="footer" id="footer">
         <div class="container">
@@ -397,8 +519,9 @@
     <!--/.footer-->
 </footer>
 
-
 <script>
+    $('.datepicker').datepicker();
+
     function initMap() {
         // Create a map object and specify the DOM element for display.
         var map = new google.maps.Map(document.getElementById('map'), {

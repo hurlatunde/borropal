@@ -49,11 +49,13 @@
 
             <div class="collapse navbar-collapse nav-" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown" style="margin-top: 8px;">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dd-notification"
+                    <li class="nav-item dropdown" style="margin-top: 4px;margin-right: 7px;">
+                        <a class="nav-link dropdown-togegle active" href="http://example.com" id="dd-notification"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/img/notification.svg"> <span>Notifications</span>
+                            <img src="assets/img/notification.svg">
+                            <!--<i class="font-icon-alarm"></i>-->
+                            <!--<span>Notifications</span>-->
                         </a>
                         <div class="dropdown-menu dropdown-menu-notif" aria-labelledby="dd-notification">
                             <div class="dropdown-menu-notif-header">
@@ -115,11 +117,12 @@
                             </div>
                         </div>
                     </li>
-                    <li class="nav-item dropdown" style="margin-top: 8px;">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dd-message"
+                    <li class="nav-item dropdown" style="margin-top: 4px;margin-right: 7px;">
+                        <a class="nav-link dropdown-togegle active" href="http://example.com" id="dd-message"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img src="assets/img/message_icon.svg"> <span>Messages</span>
+                            <img src="assets/img/message_icon.svg">
+                            <!--<span>Messages</span>-->
                         </a>
                         <div class="dropdown-menu dropdown-menu-notif" aria-labelledby="dd-message">
                             <div class="dropdown-menu-notif-header">
@@ -183,10 +186,11 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01"
+                        <a class="nav-link dropdown-toggle style_tri" href="http://example.com" id="dropdown01"
                            data-toggle="dropdown"
                            aria-haspopup="true" aria-expanded="false">
-                            <img style="border-radius: 50%;margin: 0 4px" src="holder.js/38x38"> <span>Olatunde Owokonoiran</span>
+                            <img class="user" style="border-radius: 50%;margin: 0 4px;width: 40px;"
+                                 src="assets/img/photo-92-3.jpg"> <span> ifeoma nwakwesi </span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                             <a class="dropdown-item" href="dashboard.html"> Dashboard </a>
@@ -198,178 +202,230 @@
             </div>
         </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8" style="    margin-top: 5rem;">
-                    <div>
-                        <h3>Loan Requests</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!--<div class="container">-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-8" style="    margin-top: 5rem;">-->
+        <!--<div>-->
+        <!--<h3>Dashboard</h3>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
     </div>
 </header>
-
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-        <a class="nav-link active" href="dashboard.html">Dashboard</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="borrow.html">Borrow</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="lend.html">Lend</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="requests.html">Loan Requests</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="activities.html">Activities</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="profile.html">Profile</a>
-    </li>
-</ul>
-
+<div>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link " href="dashboard.html">My Dashboard</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="profile.html">Profile</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="marketplace.html">Market Place</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="borrow.html">Borrow</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="requests.html">Loan Requests</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="activities.html">Activities</a>
+        </li>
+    </ul>
+</div>
 
 <section id="dashoard">
     <div class="container">
-        <div>
-
-            <!-- Nav tabs -->
-            <ul class="nav nav-pills" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab"> Individual Loans </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#profile" role="tab"> Market Place Loans </a>
-                </li>
-            </ul>
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane active" id="home" role="tabpanel">
+        <div class="row">
+            <div class="col-md-3">
+                <div>
                     <div>
-                        <div style="padding: 22px 0;">
-                            <table class="table table-hover ">
-                                <thead class="thead-default">
-                                <tr>
-                                    <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Loan Amount</th>
-                                    <th>Repayment Amount</th>
-                                    <th>Status</th>
-                                    <th>last payment</th>
-                                    <th>Final Date Due</th>
-                                    <th>Lender</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Ottomon</td>
-                                    <td>NGN 40,000</td>
-                                    <td>NGN 48,000</td>
-                                    <td><span class="label label-success">Paid</span></td>
-                                    <td>6 hours ago</td>
-                                    <td>October 20, 2019</td>
-                                    <td class="table-photo">
-                                        <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Olatunde</td>
-                                    <td>Dominic</td>
-                                    <td>NGN 40,000</td>
-                                    <td>NGN 48,000</td>
-                                    <td> <span class="label label-warning">Pending</span></td>
-                                    <td>6 hours ago</td>
-                                    <td>October 20, 2019</td>
-                                    <td class="table-photo">
-                                        <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Sunday</td>
-                                    <td>Abba</td>
-                                    <td>NGN 40,000</td>
-                                    <td>NGN 48,000</td>
-                                    <td>Pending</td>
-                                    <td>6 hours ago</td>
-                                    <td>October 20, 2019</td>
-                                    <td class="table-photo">
-                                        <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Monday</td>
-                                    <td>Otto</td>
-                                    <td>NGN 40,000</td>
-                                    <td>NGN 48,000</td>
-                                    <td>Pending</td>
-                                    <td>6 hours ago</td>
-                                    <td>October 20, 2019</td>
-                                    <td class="table-photo">
-                                        <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">5</th>
-                                    <td>Mark</td>
-                                    <td>Settingp</td>
-                                    <td>NGN 40,000</td>
-                                    <td>NGN 48,000</td>
-                                    <td>Pending</td>
-                                    <td>6 hours ago</td>
-                                    <td>October 20, 2019</td>
-                                    <td class="table-photo">
-                                        <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">6</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>NGN 40,000</td>
-                                    <td>NGN 48,000</td>
-                                    <td>Pending</td>
-                                    <td>6 hours ago</td>
-                                    <td>October 20, 2019</td>
-                                    <td class="table-photo">
-                                        <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <div>
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-end">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#" tabindex="-1">Previous</a>
-                                        </li>
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
-                                        </li>
-                                    </ul>
-                                </nav>
+                        <h3>Hi, ifeoma nwakwesi</h3>
+                        <p>Welcome Back</p>
+                    </div>
+                </div>
+                <hr>
+                <div style="background: #f1f1f1;padding: 20px;border-radius: 4px;">
+                    <div class="text-center">
+                        <div>
+                            <img style="width: 42%;padding: 18px;" src="/assets/img/Read Message_000000_50.png">
+                        </div>
+                        <h3>Invite your friend</h3>
+                        <p>Earn a reward for each friend you invite</p>
+                        <div>
+                            <div class="form-group">
+                                <input readonly type="email" style="    font-size: 13px;" value="https://borrowpal.com/ref/234223" disabled class="form-control"
+                                       aria-describedby="emailHelp" placeholder="Enter email">
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel">...</div>
+                <hr>
+                <div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Help & Supports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Faq</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#">Copyright © borropal 2017</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home" role="tab"> Individual Loans </a>
+                    </li>
+                    <!--<li class="nav-item">-->
+                        <!--<a class="nav-link" data-toggle="tab" href="#profile" role="tab"> Market Place Loans </a>-->
+                    <!--</li>-->
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="home" role="tabpanel">
+                        <div>
+                            <div style="padding: 22px 0;">
+                                <table class="table table-hover ">
+                                    <thead class="thead-default">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>Loan Amount</th>
+                                        <th>Repayment Amount</th>
+                                        <th>Status</th>
+                                        <th>last payment</th>
+                                        <th>Final Date Due</th>
+                                        <th>Lender</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>Ottomon</td>
+                                        <td>NGN 40,000</td>
+                                        <td>NGN 48,000</td>
+                                        <td><span class="label label-success">Paid</span></td>
+                                        <td>6 hours ago</td>
+                                        <td>October 20, 2019</td>
+                                        <td class="table-photo">
+                                            <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Olatunde</td>
+                                        <td>Dominic</td>
+                                        <td>NGN 40,000</td>
+                                        <td>NGN 48,000</td>
+                                        <td> <span class="label label-warning">Pending</span></td>
+                                        <td>6 hours ago</td>
+                                        <td>October 20, 2019</td>
+                                        <td class="table-photo">
+                                            <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <td>Sunday</td>
+                                        <td>Abba</td>
+                                        <td>NGN 40,000</td>
+                                        <td>NGN 48,000</td>
+                                        <td>Pending</td>
+                                        <td>6 hours ago</td>
+                                        <td>October 20, 2019</td>
+                                        <td class="table-photo">
+                                            <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <td>Monday</td>
+                                        <td>Otto</td>
+                                        <td>NGN 40,000</td>
+                                        <td>NGN 48,000</td>
+                                        <td>Pending</td>
+                                        <td>6 hours ago</td>
+                                        <td>October 20, 2019</td>
+                                        <td class="table-photo">
+                                            <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <td>Mark</td>
+                                        <td>Settingp</td>
+                                        <td>NGN 40,000</td>
+                                        <td>NGN 48,000</td>
+                                        <td>Pending</td>
+                                        <td>6 hours ago</td>
+                                        <td>October 20, 2019</td>
+                                        <td class="table-photo">
+                                            <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>NGN 40,000</td>
+                                        <td>NGN 48,000</td>
+                                        <td>Pending</td>
+                                        <td>6 hours ago</td>
+                                        <td>October 20, 2019</td>
+                                        <td class="table-photo">
+                                            <img src="holder.js/38x38" alt="" data-toggle="tooltip" data-placement="bottom" data-html="true" title="" data-original-title="Nicholas<br/>Barrett">
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div>
+                                    <nav aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-end">
+                                            <li class="page-item disabled">
+                                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                            </li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#">Next</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel">...</div>
+                </div>
             </div>
 
         </div>
     </div>
 </section>
+
+<div class="ref_friend">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" style="background: #e01765;padding: 40px;color: #fff;">
+                <div>
+                    <h3>Invite your friend</h3>
+                    <p>Earn a reward for each friend you invite</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <footer>
     <div class="footer" id="footer">
